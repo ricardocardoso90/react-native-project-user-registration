@@ -2,7 +2,7 @@
 
 Projeto teste de aulas do React Native.
 
-Tecnologias utilizadas: React + TypeScript.
+Tecnologias utilizadas: React Native + TypeScript.
 
 # Instalação:
 
