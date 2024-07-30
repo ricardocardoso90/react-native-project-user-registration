@@ -2,8 +2,10 @@
 
 **Tecnologias utilizadas:**
 
+- [Expo]()
 - [Typescript]()
 - [React Native]()
+- [Styled Components]()
 - [React Navigation]()
 
 ## Instalação:
