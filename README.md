@@ -1,8 +1,7 @@
-## Projeto: Ignite Gym
+## Projeto: Cadastro de Usuários
 
 **Tecnologias utilizadas:**
 
-- [Expo]()
 - [Typescript]()
 - [React Native]()
 - [React Navigation]()
