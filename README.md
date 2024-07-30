@@ -1,14 +1,17 @@
-# Projeto Cadastro de Usuários.
+## Projeto: Ignite Gym
 
-Projeto teste de aulas do React Native.
+**Tecnologias utilizadas:**
 
-Tecnologias utilizadas: React Native + TypeScript.
+- [Expo]()
+- [Typescript]()
+- [React Native]()
+- [React Navigation]()
 
-# Instalação:
+## Instalação:
 
-- `npx create-expo-app --template`
+- `npx create-expo-app@latest`
 - `npm i ou npm install`
 
-### Para rodar:
+## Para rodar:
 
-- `npx expo start`
+- `npm start`
