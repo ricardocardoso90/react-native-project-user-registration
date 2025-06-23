@@ -37,8 +37,8 @@ export function Home() {
   };
 
   function handleParticipantRemove(item: string) {
-    Alert.alert('Remover', `Deseja remover o participante ${name}?`, [
-      { text: 'Sim', onPress: () => removeUser },
+    Alert.alert('Remover', `Deseja remover o participante ${item}?`, [
+      { text: 'Sim', onPress: () => removeUser(item) },
       { text: 'Não', style: 'cancel' }
     ]);
     // setUsers(users.filter(user => user !== item));
