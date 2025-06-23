@@ -1,11 +1,11 @@
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { styles } from './styles';
+import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
 interface Types {
   handleParticipantAdd: () => void;
-  handleChange: () => void;
+  handleChange: (value: string) => void;
   userValue: string;
-}
+};
 
 export function Form({ handleParticipantAdd, handleChange, userValue }: Types) {
   return (

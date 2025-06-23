@@ -1,9 +1,10 @@
-import { Alert, FlatList, ScrollView, Text, View } from "react-native";
+import { useState } from "react";
 import { styles } from "./styles";
+import { Alert, FlatList, Text, View } from "react-native";
+import { StatusBar } from "react-native";
+
 import { Form } from "../../components/Form";
 import { Participant } from "../../components/Participant";
-import { StatusBar } from "react-native";
-import { useState } from "react";
 
 export function Home() {
   const [users, setUsers] = useState<string[]>([]);
@@ -19,7 +20,7 @@ export function Home() {
 
   // function handleChange(e) {
   //   setUserValue(e);
-  // }
+  // };
 
   function handleParticipantAdd() {
     if (participantes.includes(userValue)) {
@@ -28,18 +29,20 @@ export function Home() {
     }
     setUsers(prevState => [...prevState, userValue]);
     setUserValue('');
-  }
+  };
 
-  function addUser(name: string) {
-    setUsers(prevState => prevState.filter(user => user !== name))
-  }
+  function removeUser(item: string) {
+    // setUsers(prevState => prevState.filter(user => user !== item));
+    setUsers(users.filter(user => user !== item));
+  };
 
-  function handleParticipantRemove(name: string) {
+  function handleParticipantRemove(item: string) {
     Alert.alert('Remover', `Deseja remover o participante ${name}?`, [
-      { text: 'Sim', onPress: () => addUser },
+      { text: 'Sim', onPress: () => removeUser },
       { text: 'Não', style: 'cancel' }
-    ])
-  }
+    ]);
+    // setUsers(users.filter(user => user !== item));
+  };
 
   return (
     <View style={styles.container}>
