@@ -15,4 +15,8 @@
 
 ## Para rodar:
 
+<<<<<<< HEAD
 - `npm start`
+=======
+- `npm start`
+>>>>>>> 4b66a93e7bbc5c2a490bcfe1f2cb1db5070ab18f
