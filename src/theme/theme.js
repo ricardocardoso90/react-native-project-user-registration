@@ -27,5 +27,5 @@ export default {
   FONT_FAMILY: {
     BOLD: 'Roboto_700Bold',
     REGULAR: 'Roboto_400Regular'
-  }
+  },
 };

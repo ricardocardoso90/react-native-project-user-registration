@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { styles } from "./styles";
-import { Alert, FlatList, Text, View } from "react-native";
 import { StatusBar } from "react-native";
+import { Alert, FlatList, Text, View } from "react-native";
 
 import { Form } from "../../components/Form";
 import { Participant } from "../../components/Participant";
@@ -26,7 +26,7 @@ export function Home() {
     if (participantes.includes(userValue)) {
       return Alert.alert('Participante já existe',
         'Já existe um participante na lista com esse nome');
-    }
+    };
     setUsers(prevState => [...prevState, userValue]);
     setUserValue('');
   };

@@ -1,11 +1,11 @@
-import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
+import { Text, TouchableOpacity, View } from "react-native";
 
 interface Types {
   name: string;
   idade?: number;
   handleParticipantRemove: () => void;
-}
+};
 
 export function Participant({ name, handleParticipantRemove }: Types) {
   return (
@@ -18,5 +18,5 @@ export function Participant({ name, handleParticipantRemove }: Types) {
         <Text style={styles.buttonText}>-</Text>
       </TouchableOpacity>
     </View>
-  )
-}
+  );
+};
